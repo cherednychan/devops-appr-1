@@ -1,0 +1,1 @@
+ls -t -p --time=creation --group-directories-first --ignore=".*" | awk '{if ($1~/\/$/) {print $1 ",";} else {print $1 ","; }}'
